@@ -5,15 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 21:35:02 by ismherna          #+#    #+#             */
-/*   Updated: 2024/12/17 21:39:42 by ismherna         ###   ########.fr       */
+/*   Created: 2025/12/17 21:35:02 by ismherna          #+#    #+#             */
+/*   Updated: 2026/11/10 19:54:29 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WHATEVER_HPP
 #define WHATEVER_HPP
-
-template <typename T>
 
 /*================================COLORS=====================================*/
 
@@ -40,6 +38,7 @@ template <typename T>
 
 /*=================================FUNCTIONS=====================================*/
 
+template <typename T>
 void swap(T &a, T &b) {
 	T tmp = a;
 	a = b;
@@ -48,12 +47,16 @@ void swap(T &a, T &b) {
 
 template <typename T>
 T min(T a, T b) {
-	return (a < b)? a : b;
+	if (a < b)
+		return a;
+	return b;
 }
 
 template <typename T>
 T max(T a, T b) {
-	return (a > b)? a : b;
+	if (a > b)
+		return a;
+	return b;
 }
 
 #endif

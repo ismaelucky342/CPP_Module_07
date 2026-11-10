@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/10 19:30:49 by ismherna          #+#    #+#             */
-/*   Updated: 2024/12/11 02:04:29 by ismherna         ###   ########.fr       */
+/*   Created: 2025/12/10 19:30:49 by ismherna          #+#    #+#             */
+/*   Updated: 2026/11/10 19:57:06 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 
 /*===============================INCLUDES===================================*/
 
-# include "Array.tpp"
 #include <iostream>
-#include <stdlib.h>
+#include <cstdlib>
 #include <cassert>
+#include <stdexcept>
 #define MAX_VAL 10
-
-template <typename T>
 
 /*================================COLORS=====================================*/
 
@@ -47,9 +45,11 @@ template <typename T>
 # define B_GRAY "\033[100m"
 
 /*=================================CLASS=====================================*/
+
+template <typename T>
 class Array {
 	private:
-		T				*_array;
+		T			*_array;
 		unsigned int	_length;
 	public:
 		Array();
@@ -60,9 +60,7 @@ class Array {
 		T &operator[](unsigned int idx);
 		const T &operator[](unsigned int idx) const;
 		unsigned int size(void) const;
-
 };
-
 
 /*=================================FUNCTIONS=====================================*/
 
@@ -71,5 +69,7 @@ void test_add_element();
 void test_copy_array();
 void test_opindex_exception_out_of_range();
 void test_op_index_assignment();
+
+#include "Array.tpp"
 
 #endif
