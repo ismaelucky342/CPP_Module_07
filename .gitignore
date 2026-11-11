@@ -1,0 +1,19 @@
+# Compiled objects and libraries
+*.o
+*.a
+*.so
+
+# Build executables
+/ex00/ex00
+/ex01/ex00
+/ex02/array
+*.out
+a.out
+
+# Local and crash-generated files
+.DS_Store
+*.swp
+*~
+core
+core.*
+vgcore.*

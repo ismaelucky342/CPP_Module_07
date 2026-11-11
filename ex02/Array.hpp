@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 19:30:49 by ismherna          #+#    #+#             */
-/*   Updated: 2026/11/10 19:57:06 by ismherna         ###   ########.fr       */
+/*   Updated: 2026/11/11 16:11:17 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,14 +61,6 @@ class Array {
 		const T &operator[](unsigned int idx) const;
 		unsigned int size(void) const;
 };
-
-/*=================================FUNCTIONS=====================================*/
-
-void test_build_array();
-void test_add_element();
-void test_copy_array();
-void test_opindex_exception_out_of_range();
-void test_op_index_assignment();
 
 #include "Array.tpp"
 
